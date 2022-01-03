@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate_Profile_Delete</title>
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    h1 {
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      font-size: 35px;
+    }
+
+    h2, h3, h4, h5, h6 {
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      font-size: 20px;
+    }
+
+    h7 {
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      font-size: 45px;
+    }
+
+    .context {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    }
+
+    .profile-page {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: rgba(255,219,92);
+    }
+
+    .header-left {
+      float: left;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    .header-right {
+      float: right;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px
+    }
+
+    .profile-page-content {
+      padding: 2rem;
+      margin-top: 6rem;
+      width: 75%;
+      background-color: white;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    .employee-descriptions {
+      padding: 2rem;
+      flex-grow: 1;
+      background-color: #c3c3c3;
+      border-radius: 50px;
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: 54px 100px 100px 100px 54px 54px; 
+    }
+
+    .employee-description-box {
+      grid-column: span 2 / span 2;
+      background-color: white;
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .employee-description-box-1 {
+      grid-column: span 2 / span 2;
+      background-color: rgba(254,119,119);;
+      width: 60%;
+      border-radius: 15px;
+    }
+
+    .employee-description-box-2 {
+      grid-column: span 2 / span 2;
+      background-color: white;
+      width: 60%;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header class="p-3-border-header-bar" style="position: sticky; top: 0; box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.356); background-color: rgba(255,219,92); border-radius: 15px; height: 120px;">
+        <a href="Candidate_Profile_Delete.html" class="header-left">
+          <img src="images\menu.png" alt="" width="80" height="80">
+        </a>
+          <a href="Candidate_Profile_Delete.html" class="header-right">
+            <img src="images\option.png" alt="" width="90" height="90">
+          </a>
+            <a href="Candidate_Profile_Delete.html" class="header-right">
+              <img src="images\profile.png" alt="" width="90" height="90">
+            </a>
+              <div class="context">
+                <h7>ผู้สมัครงาน</h7>
+              </div>  
+  </header>
+  <div class="profile-page">
+    <div class="profile-page-content">
+      <div class="employee-profile">
+        <h1>Profile ผู้สมัครงาน</h1>
+        <div class="employee-description-picture"></div>
+        <div><img src="images\profile.png" alt="" width="200" class="center"></div>
+      </div>
+      <div class="employee-descriptions">
+        <h4 class="employee-description-title">
+          ชื่อ-นามสกุล
+        </h4>
+        <div class="employee-description-box">
+          <h4 class="employee-description-text">
+            
+          </h4>
+        </div>
+        <h4 class="employee-description-title">
+          รายละเอียด
+        </h4>
+        <div class="employee-description-box">
+          <h4 class="employee-description-text">
+            
+          </h4>
+        </div>
+        <h4 class="employee-description-title">
+          ประวัติ
+        </h4>
+        <div class="employee-description-box">
+          <h4 class="employee-description-text">
+            
+          </h4>
+        </div>
+        <h4 class="employee-description-title">
+          ความสามารถ
+        </h4>
+        <div class="employee-description-box">
+          <h4 class="employee-description-text">
+            
+          </h4>
+        </div>
+        <h4 class="employee-description-title">
+          เงินเดือน
+        </h4>
+        <div class="employee-description-box">
+          <h4 class="employee-description-text">
+            
+          </h4>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div align="right"><input class="employee-description-box-1" type="button" value="ลบผู้ใช้งาน" style="color: black; font-size: 18px;"></div>
+        <div align="right"><input class="employee-description-box-2" type="button" value="ย้อนกลับ" style="color: black; font-size: 18px;"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
